@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 1 ano de namoro</title>
+    <style>
+        body{
+            background-color: rgb(145, 94, 194);
+            padding-top: 150px;
+        }
+        .painel{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            margin: auto;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+
+        }
+        #s{
+            
+            height: 40px;
+            width: 60px;
+            background-color: rgb(205, 169, 238);
+            border: white;
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 70px;
+
+
+
+
+        }
+        #n{
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: rgb(205, 169, 238);
+            border: white;
+            border-radius: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: -60px;
+
+
+        }
+        #i{
+            width: 500px;
+            height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="painel">
+        <h1>Feliz 1 ano de namoro</h1>
+        <img id="i" src="https://th.bing.com/th/id/R.b58763365230ab26be03b445f9c87f26?rik=Sg1xCk3aTvLTtg&pid=ImgRaw&r=0" alt="">
+        <h3>Você aceita renovar seu contrato de namoro ???</h3>
+    
+        <a href="https://www.youtube.com/watch?v=Iq6RdCTLBd8"><button id="s" onclick="eba()">Sim!</button></a> 
+        <button onmouseover="fuja()" id="n">Não!</button>
+        
+    </div>
+    <script>
+        function fuja(){
+            var bn = document.getElementById("n")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - bn.offsetWidth;
+            var maxY = alturaJanela - bn.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            bn.style.left = aleatorioX + "px";
+            bn.style.top= aleatorioY + "px";
+
+        }
+        function eba (){
+            alert("Eu quero estar com você,quero passar todos e cada um dos meus dias até morrer com você, e somente você.")
+
+        }
+    </script>
+    
+</body>
+</html>
